@@ -78,17 +78,36 @@ public abstract class OwOer extends JFrame implements ActionListener {
         		  case 'L': outputChars[x] = 'W';
         		  break;
         		  case 'n' :outputChars[x] = 'n';
-        		  			if (outputChars[x+1]!= ' ')
-        		  			{
-        		  				outputChars[x+1] = 'y';
-        		  			}
-        		  			break;
+        		  	if (outputChars[x+1]!= ' ')
+        		  		{
+        		  		outputChars[x+1] = 'y';
+        		  		}
+        		  	break;
         		  case 'N': outputChars[x] = 'N';
-		  					if (outputChars[x+1]!= ' ')
-		  						{
-		  						outputChars[x+1] = 'y';
-		  						}
-		  						break;
+		  		if (outputChars[x+1]!= ' ')
+		  		{
+		  		outputChars[x+1] = 'y';
+		  		}
+		  		break;
+			case 'k':
+		  		if (outputChars[x+1] == 'e')
+		  		{
+				outputChars[x] = 'e';
+		  		outputChars[x+1] = 'k';
+				}
+				break;
+			case 'K':
+		  		if (outputChars[x+1] == 'e')
+		  		{
+				outputChars[x] = 'E';
+		  		outputChars[x+1] = 'k';
+				}
+				if (outputChars[x+1] == 'E')
+		  		{
+				outputChars[x] = 'E';
+		  		outputChars[x+1] = 'K';
+				}
+				break;
         		  default: 
         			  break;
         		  }
